@@ -1,6 +1,9 @@
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+const Hero1 = new URL('../img/banner_Hero1.jpg', import.meta.url).href
+const Hero2 = new URL('../img/banner_Hero2.jpg', import.meta.url).href
+const Hero3 = new URL('../img/banner_Hero3.jpg', import.meta.url).href
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,7 +38,7 @@ const HeroSlider = () => {
                   Shop Now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero1.jpg" alt="hero" />
+              <img src={Hero1} alt="hero" />
             </SwiperSlide>
             <SwiperSlide>
               <div className="content">
@@ -48,7 +51,7 @@ const HeroSlider = () => {
                   Shop Now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero2.jpg" alt="hero" />
+              <img src={Hero2} alt="hero" />
             </SwiperSlide>
             <SwiperSlide>
               <div className="content">
@@ -61,7 +64,7 @@ const HeroSlider = () => {
                   Shop Now
                 </Link>
               </div>
-              <img src="/src/img/banner_Hero3.jpg" alt="hero" />
+              <img src={Hero3} alt="hero" />
             </SwiperSlide>
           </Swiper>
         </div>

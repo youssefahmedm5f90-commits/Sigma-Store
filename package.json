@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage":"https://youssefahmedm5f90-commits.github.io/Sigma-Store",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^13.2.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-hot-toast": "^2.6.0",
