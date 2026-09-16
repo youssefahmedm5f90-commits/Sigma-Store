@@ -226,17 +226,80 @@ header{
 /* medai  */
 
 @media (max-width: 767px) {
-    .top-header .container {
+.top-header .container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    gap: 12px;
+  }
+
+
+  .top-header .logo {
+    order: 1;
+  }
+
+  .top-header .logo img {
+    max-height: 38px; 
+    width: auto;
+  }
+
+
+  .top-header .header-icon {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .top-header .header-icon .icon {
+    font-size: 20px;
+  }
+
+
+  .top-header .search-box, 
+  .top-header .container > :nth-child(2) { 
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+
+
+    .btm-header .nav {
         display: flex;
-        flex-direction: column;
-        padding: 10px 5px;
-        gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #0088ff; 
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
-    .search-box {
-        width: 100%;
-        max-width: 400px;
+    .btm-header .category-nav {
+        flex: 1;
     }
+
+    .btm-header .category-nav .category-btn {
+        font-size: 16px;
+        gap: 8px;
+        padding: 10px 0;
+        background: transparent;
+        color: #fff;
+    }
+
+
+    .container .nav .burger {
+        display: block !important;
+        font-size: 28px !important;
+        color: #ffffff !important; 
+        cursor: pointer;
+        margin: 0 !important;
+        z-index: 102;
+    }
+
 
     .btm-header .nav-links {
         position: absolute;
@@ -244,7 +307,6 @@ header{
         left: 0;
         width: 100%;
         background-color: #fff;
-        color: var(--white_color);
         flex-direction: column;
         max-height: 0;
         opacity: 0;
@@ -259,18 +321,6 @@ header{
         opacity: 1;
     }
 
-    .container .nav .burger {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        color: var(--white_color);
-        margin-left: -10px;
-    }
-
-    .btm-header .sign-regs-icon {
-        display: none;
-    }
-
     .btm-header .nav-links li {
         width: 100%;
         border-bottom: 1px solid #f0f0f0; 
@@ -279,14 +329,13 @@ header{
     .btm-header .nav-links li a {
         display: block;
         padding: 12px 20px;
-        color: #333333 ; 
+        color: #333333 !important;
         font-weight: 500;
         text-decoration: none;
     }
 
-    .btm-header .category-nav .category-btn{
-        font-size: 30px;
-        gap: 2px;
+    .btm-header .sign-regs-icon {
+        display: none;
     }
 
 }
