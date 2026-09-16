@@ -8,7 +8,7 @@
 }
 
 .slide-product{
-    padding : 30px 0;
+    padding :0 0 60px 0;
 }
 
 .top-slide{
@@ -183,11 +183,31 @@
     gap: 30px;
   }
 
-  .prodcuts_loading .img_product{
-
-  }
 
   .prodcuts_loading  .content{
     height: 30px;
     margin-bottom: 10px;
+  }
+
+  .container .swiper-mop{
+    display: none;
+  }
+
+
+  @media(max-width:767px){
+      .container .swiper-desc{
+        display: none;
+      }
+    .container .swiper-mop{
+    display: block;
+  }
+  .product{
+    width: 300px;
+    padding: 25px 30px;
+    margin: auto;
+}
+
+.favo{
+  padding-top: 100px;
+}
   }

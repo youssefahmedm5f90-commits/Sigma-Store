@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  FaCartArrowDown,
-  FaRegHeart,
-  FaShare,
-  FaStar,
-  FaStarHalfAlt,
-} from "react-icons/fa";
 import "./productDetails.css";
 import SlideProduct from "../../components/slideProducts/SlideProduct";
 import ProductDetailsLoading from "./ProductDetailsLoading";

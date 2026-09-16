@@ -42,7 +42,6 @@ const Home = () => {
     fetchProduct();
   }, []);
 
-  console.log(products);
 
   return (
     <PageTransition>

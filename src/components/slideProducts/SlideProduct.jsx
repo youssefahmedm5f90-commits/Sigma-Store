@@ -13,7 +13,8 @@ const SlideProduct = ({title , dec , data}) => {
             <h2>{title}</h2>
             <p>{dec}</p>
             </div>
-            <Swiper
+            <div className="swiper-desc">
+                <Swiper
             rewind={true}
             autoplay={{
                 delay: 2500,
@@ -32,7 +33,32 @@ const SlideProduct = ({title , dec , data}) => {
                     )
                 })}
 
-            </Swiper>
+                </Swiper>
+            </div>
+
+
+                <div className="swiper-mop">
+                    <Swiper
+                rewind={true}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                slidesPerView={1}
+                navigation={true}
+                modules={[Autoplay ,Navigation]}
+                className="mySwiper"
+                >
+
+                    {data.map((item)=>{
+                        return(
+                            <SwiperSlide><Products item = {item} /></SwiperSlide>
+
+                        )
+                    })}
+
+                    </Swiper>
+                </div>
         </div>
         </div>
     );

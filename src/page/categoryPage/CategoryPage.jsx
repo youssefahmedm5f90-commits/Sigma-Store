@@ -33,7 +33,7 @@ const CategoryPage = () => {
         <SlideProductLoading key={category} />
       ) : (
         <div className="container">
-          <div className="top_slide">
+          <div className="top-slide slide-catog ">
             <h2>{category} : {categoryProducts.limit}</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

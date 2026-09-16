@@ -12,7 +12,7 @@ const Favorites = () => {
  <PageTransition >
         <div className="category_products FavoritesPage">
             <div className="container">
-                <div className="top-slide">
+                <div className="top-slide favo">
                     <h2>Your Favorites</h2>
                 </div>
 

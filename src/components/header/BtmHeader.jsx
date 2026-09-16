@@ -18,6 +18,7 @@ const BtmHeader = () => {
   const location = useLocation()
   const  [categorys, setCategorys ] = useState([]);
   const [isCategorys , setIsCategorys] =useState(false)
+  const [isList , setIsList] =useState(false)
 
     useEffect(() => {
     setIsCategorys(false)
@@ -57,11 +58,12 @@ const BtmHeader = () => {
           </div>
 
 
-          <div className="nav-links">
+          <div className={`nav-links ${isList ? 'active' : ''}`}>
             {NavLinks.map((item)=>(
               <li className={location.pathname === item.link ? "active" : ''}><Link to = {item.link}> {item.title}</Link></li>
             ))}
           </div>
+            <IoMenu  className={`burger ${isCategorys ? 'active' : ''}`} onClick={() => setIsList(!isList)}/>
 
         </nav>
 

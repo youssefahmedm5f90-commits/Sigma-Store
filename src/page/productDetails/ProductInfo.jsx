@@ -60,6 +60,10 @@ const handelAddToFav = ()=>{
   return (
     <div className={`details-item ${isInCart ? "in-cart" : ""}`}>
       <h1 className="name">{product.title}</h1>
+            <div className="price">
+        $<span>{product.price}</span>
+      </div>
+      
       <div className="stars">
         <FaStar />
         <FaStar />
@@ -67,9 +71,7 @@ const handelAddToFav = ()=>{
         <FaStar />
         <FaStarHalfAlt />
       </div>
-      <div className="price">
-        $<span>{product.price}</span>
-      </div>
+
       <h5>
         Availability : <span>{product.availabilityStatus}</span>
       </h5>

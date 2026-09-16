@@ -160,3 +160,13 @@
     background: transparent;
     color: var(--main_color);
 }
+
+@media (max-width:767px) {
+    .checkout{
+    margin: 100px 0;
+  }
+
+    .checkout .ordersummary{
+    width: 80%;
+  }
+}

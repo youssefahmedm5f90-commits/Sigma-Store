@@ -11,7 +11,7 @@ const Cart = () => {
   
   return (
     <PageTransition>
-          <div className="checkout">
+    <div className="checkout">
       <div className="ordersummary">
         <h1>Order Summary</h1>
 
